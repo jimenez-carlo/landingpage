@@ -20,6 +20,9 @@ a{
 .c{
 	text-align: center;
 }
+video{
+	max-height: 265px;
+}
 img{
 	width:100%;
 }
@@ -43,6 +46,25 @@ section{
 	min-height: 100vh;
 	width:100%;
 }
+.btn{
+	padding: 20px;
+    font-size: 50px;
+    background: var(--dark-blue);
+    color: var(--white);
+    border:solid 5px;
+}
+.btn:hover{
+	background: var(--white);
+	color: var(--dark-blue);
+}
+.med{
+	min-height:70vh!important;
+	height: 70vh;
+}
+.last{
+	min-height:50vh!important;
+	height: 50vh;
+}
 .color-blue{
  	color:var(--blue);
 }
@@ -54,6 +76,9 @@ section{
 }
 .color-white{
 	color:#fff;
+}
+.flex-column{
+	flex-direction: column;
 }
 .bg-pink{
 background:var(--pink);
@@ -80,9 +105,6 @@ color:#fff;
 }
 .w-50{
 	width: 25%;
-}
-.benefits h1{
-		margin-top: 60px;
 }
 .checked{
 	width: 100%;
@@ -158,6 +180,7 @@ header{
 	justify-content: space-between;
 }
 footer{
+	line-height: 30px;
 	padding: 20px 40px;
 	background: var(--dark-blue);
 	color:#fff;
@@ -165,4 +188,48 @@ footer{
 }
 p footer{
 	padding:20px 0px;
+}
+@media (max-width: 360px){
+	.flex{
+		flex-direction: column;
+	}
+	section{
+		min-height: 100vh;
+		padding: 20px 40px 20px;
+	}
+	.flex>*{
+		width:100%;
+		height: 100%;
+	}
+	.title{
+		padding: unset;
+	}
+	.about h1 {
+		font-size: 6vh;
+	}
+	h1{
+		font-size:5vh;
+	}
+	h2{
+		font-size: 3.5vh;
+	}
+	h3{
+		font-size:3vh;
+	}
+	.checked{
+		padding: 0;
+	}
+	.checked li{
+		font-size: 2.5vh;
+	}
+	.testimony-item {
+    	padding: 20px;
+    	margin-top: 20px;
+	}
+	.about{
+		padding: 20px 20px;
+	}
+	.last{
+		height: unset;
+	}
 }
