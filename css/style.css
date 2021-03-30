@@ -179,6 +179,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	/*flex-wrap: wrap*/
 }
 .bt{
 	justify-content: space-between;
@@ -193,7 +194,25 @@ footer{
 p footer{
 	padding:20px 0px;
 }
-@media (max-width: 360px){
+.s13{
+	padding:40px 10vw;
+}
+.h50{
+	height: 50%;
+}
+.s13 h5{
+	line-height: 30px;
+	vertical-align: top;
+}
+.sImg{
+	width:60%;
+	border-radius: 100%;
+	border:10px #fff solid;
+}
+.s13 h1{
+	margin-bottom: 40px;
+}
+@media (max-width: 425px){
 	.flex{
 		flex-direction: column;
 	}
