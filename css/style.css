@@ -255,4 +255,17 @@ p footer{
 	.last{
 		height: unset;
 	}
+	.flex-alt{
+		margin-top: 20px;
+		flex-direction: column-reverse;
+	}
+	.sImg{
+		width: 80%;
+	}
+	.s13 h5{
+		margin-top: 20px;
+		font-size: 3vh;
+		font-weight: lighter;
+		line-height: unset;	
+	}
 }
